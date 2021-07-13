@@ -1,3 +1,8 @@
+FROM mysql:8.0
+ENV MYSQL_ROOT_PASSWORD=12345
+ENV MYSQL_DATABASE=rest_api_crud_db
+ENV MYSQL_PASSWORD=12345
+
 FROM maven:3.8.1-openjdk-15-slim AS build
 COPY src /spring-backend/src
 COPY pom.xml /spring-backend/
