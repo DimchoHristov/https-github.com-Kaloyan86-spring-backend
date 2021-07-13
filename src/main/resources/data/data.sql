@@ -1,1 +1,1 @@
-CREATE TABLE employees(id int NOT NULL AUTO_INCREMENT,first_name varchar (255),last_name varchar (255),email_id varchar (255));
+CREATE TABLE  IF NOT EXIST employees(id int NOT NULL AUTO_INCREMENT,first_name varchar (255),last_name varchar (255),email_id varchar (255),PRIMARY KEY (`id`));
